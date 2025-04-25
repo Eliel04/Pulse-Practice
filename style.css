@@ -5,6 +5,11 @@
     font-family: Work Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
    line-height: 1.5;
 }
+Html{
+    font-family: Work Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+
 body{
     background-color: #eafaf0;
 }
@@ -89,17 +94,19 @@ padding-right: 30px;
 
 }
 .div__inner{
-    max-width: 500px;
+    max-width: 650px;
 
 }
 
 .intro-page__heading{
     text-align: center;
-    font-size: 54px;
+    font-size: 50px;
     margin-bottom: 18px;
+    font-weight: 800;
 }
 
-.intro-page__paragraph{
+.intro-page__para{
+    padding: 5px 14px;
  
 }
 
@@ -107,10 +114,13 @@ padding-right: 30px;
   /*the header section*/
  
 .header{
+    margin-top: 50px;
     display: flex;
     justify-content: center; 
     align-items: center;
-    padding: 20px;   
+    padding: 20px; 
+    margin-left: -1rem;
+    margin-right: -1rem;
 }
 
 @media screen and(max-width: 599px){
@@ -122,15 +132,21 @@ padding-right: 30px;
 } 
 
 .header__card{
-    display: block;
-    border: 2px solid green;
-    padding-bottom: px;
-    margin: 4px 8px;
-    padding: 20px 12px;
+    display: block;    
+    padding-bottom: 12px;
+    margin: 4px 0;
+    margin-left: 8px;
+    margin-right: 0px;
+    padding: 32px;
+    max-width: 356px;
+}
+.header__inner{
+    padding: 12px;
 }
 
 .card__list-item{
     list-style-type: none;
+    font-size: 18px;
 }
 .card__intro-recommended{
     padding: 15px  20px;
@@ -140,18 +156,139 @@ padding-right: 30px;
 .card__para{
     padding: 12px 20px;
 }
+.card__para{
+    color: green;
+}
+
+
+
+
+.header__recommend{
+    background-color: white;
+    display: block;
+    border: 2px solid green;
+    padding-bottom: px;
+    margin: 4px 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 32px;
+    max-width: 400px;
+    position: relative;
+    border-radius: 8px;
+}
+.recommend__title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #00ad6b;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    
+}
+
+
+
+.card__list-item{
+    list-style-type: none;
+    font-size: 18px;
+}
+.recommend__intro-recommended{
+    padding: 15px  20px;
+    padding-bottom:  5px;
+    align-items:center
+}
+
+.recommend__plan-para{
+    color: green;
+    padding: 0px 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    
+}
+.recommend__plan{
+    color: #83858a;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1;
+    font-size: 24px;
+    margin: 8px 0px 24px 0px;
+}
+
+.recommend__Pricing-button{
+    padding-top: 0px;
+    background-color: #1fe375;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    padding: 0px 32px 12px 32px;
+    cursor: pointer;
+    text-align: center;
+}
+.recommend__grp-btn{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.header__business{
+    display: block;
+    border: 2px solid green;
+    padding-bottom: px;
+    margin: 4px 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 32px;
+    max-width: 400px;
+}
+.business__inner{
+    padding: 12px;
+}
+.business__plan-para{
+    color: green;
+    padding: 0px 1rem;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 1rem;
+
+}
+
+.card__list-item{
+    list-style-type: none;
+    font-size: 18px;
+}
+.business__intro-recommended{
+    padding: 15px  20px;
+    padding-bottom:  5px;
+    align-items:center
+}
+.business__para{
+    padding: 12px 20px;
+}
+.business__para{
+    color: green;
+}
+
 
 
 /**Faq section*/
 /*container*/
 .faq-row{
    
-    padding: 24px;
+    padding: 0 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     max-width: 1200px;
-    margin: 80px auto;
+    margin: 0 auto;
+    background-color: white;
    
 }
 
@@ -186,7 +323,7 @@ list-style-type: none;
     justify-content: space-between;
     align-items: center;
     padding: 0px 44px;
-    margin: auto;
+    margin:  80 auto;
     padding: 120px 0px;
     max-width: 1600px;
     
@@ -199,22 +336,38 @@ list-style-type: none;
    
    
 }
+.footer__img{
+    margin-bottom: 24px;
+    max-width: 200px;
+    width: 100%;
+}
 
 .content__butn{
     margin-top: 16px;
+    background-color: #00ad6a;
+    text-decoration: none;
+    padding: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; 
+    width: 300px;
 }
+.content__butn:hover{
+    box-shadow: -5px 5px 0.4px lightgray;
+}
+
 .footer__content{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: column;    
     width: 50%;
+    padding: opx 16px;
     
 }
 
 .footer__links{
     width: 50%;
     display: flex;
-    padding: 100px 40px;
+    padding: 100px 0px;
     color: white;
     list-style-type: none;
     
@@ -223,6 +376,8 @@ list-style-type: none;
 .links__item{
     margin: 10px 20px;
     color: white;
+     padding: 0px 12px;
+    
     
 }
 
@@ -231,7 +386,7 @@ list-style-type: none;
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
-    
+   
   
    
 }
