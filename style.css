@@ -1,4 +1,7 @@
- *{
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -24,6 +27,7 @@ body{
    justify-content: space-between;
    padding: 40px 20px;
    max-width: 1400px;
+   width: 100%;
    
    margin: auto;
    
@@ -42,24 +46,33 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 40px;
    
+      gap: 1.5rem;  
+    width: 100%;
+    max-width: 800px;
+}
+
+@media screen and (max-width: 875px) {
+    .row-Nav__links{
+        display: none;
+    }
     
 }
 
 .links__list{
 list-style-type: none;
-padding-right: 30px;
-
-
+height: 50px;
 }
+
+
 .links__list-anchor{
     text-decoration: none;
     color: rgb(51, 144, 51);
     font-size: 16px;
     font-weight: 800;
     transition: underline 300ms;
-    
+    height: 100%;
+    padding: 0 20px;
 }
 
 .links__list-anchor:hover{
@@ -113,7 +126,7 @@ padding-right: 30px;
 
   /*the header section*/
  
-.header{
+.header__inner-container{
     margin-top: 50px;
     display: flex;
     justify-content: center; 
@@ -121,12 +134,15 @@ padding-right: 30px;
     padding: 20px; 
     margin-left: -1rem;
     margin-right: -1rem;
+    width: 100%;
 }
 
 @media screen and(max-width: 599px){
-    .header{
+    
+    .header__inner-container{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        display: block;
     }
 
 } 
@@ -292,6 +308,8 @@ padding-right: 30px;
    
 }
 
+
+
 .faq-row__links{
 display: flex;
 flex-wrap: wrap;
@@ -301,11 +319,27 @@ list-style-type: none;
 
 }
 
+@media  screen and (max-width: 799px) {
+    .faq-row{
+       display: flex;
+       flex-direction: column;
+       
+    }
+
+   
+}
+
 .links__faq{
-   width: 400px;
+   width: 47%;
    gap: 8rem;
     min-height: 8rem;
     margin-bottom: 24px;
+}
+
+@media screen and (max-width: 869px) {
+    .links_faq{
+        width: 90%;
+    }
 }
 
 
