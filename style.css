@@ -25,19 +25,17 @@ body{
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 40px 20px;
-   max-width: 1400px;
-   width: 100%;
-   
-   margin: auto;
-   
+   padding: 15px;
+   height: 15vh;
+   width: 100%; 
 }
+
 .navbar_inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1300px;
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
 }
 
 
@@ -100,7 +98,7 @@ height: 50px;
     flex-direction: column;
    justify-content: center;
    align-items: center;
-    max-width: 1400px;
+    width: 40%;
     margin: auto;
     padding: 0px 24px 16px 24px;
     
@@ -254,6 +252,7 @@ height: 50px;
 
 
 .header__business{
+   
     display: block;
     border: 2px solid green;
     padding-bottom: px;
@@ -263,6 +262,15 @@ height: 50px;
     padding: 32px;
     max-width: 400px;
 }
+
+.business__title{
+    background-color: lightgray;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+
 .business__inner{
     padding: 12px;
 }
@@ -286,10 +294,23 @@ height: 50px;
 }
 .business__para{
     padding: 12px 20px;
-}
-.business__para{
     color: green;
 }
+
+  .header__info{
+    text-align: center;
+    padding: 100px;
+    width: 65%;
+    margin: auto;
+    font-size: 24px;
+  }
+  .header__info-heading{
+    color: #30a179;
+    font-size: 12px;
+    font-weight: 700;
+    padding-top: 12px;
+  }
+
 
 
 
@@ -297,7 +318,7 @@ height: 50px;
 /*container*/
 .faq-row{
    
-    padding: 0 1.5rem;
+    padding: 60px 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,16 +335,25 @@ height: 50px;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
-gap: 10px;
+gap: 8px;
 list-style-type: none;
 
 }
 
-@media  screen and (max-width: 799px) {
+@media  screen and (max-width: 480px) {
     .faq-row{
+        padding: 40px;
+    }
+    .faq-row__links{
        display: flex;
        flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       flex-wrap: nowrap;
        
+    }
+    .links__faq{
+        width: 80%;
     }
 
    
@@ -354,19 +384,21 @@ list-style-type: none;
     background-color: black;
     display: flex;
     justify-content: center;
-    justify-content: space-between;
     align-items: center;
-    padding: 0px 44px;
-    margin:  80 auto;
+   width: 100%;
+    
+    padding: 0px 44px;   
     padding: 120px 0px;
-    max-width: 1600px;
+   
     
 }
 .footer__inner{
     display: flex;
-    width: 100%;
-    max-width: 1400px;
     justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+   
    
    
 }
