@@ -78,6 +78,33 @@ body{
     }
 }
 
+@media (max-width: 1024px) {
+    #navbar-container {
+        padding: 15px 20px;
+    }
+    .links {
+        font-size: 16px;
+    }
+    .signUp-link {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    .intro-page {
+        width: 80%;
+    }
+    .intro-page__heading {
+        font-size: 40px;
+    }
+    .header__inner-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .header__card, .header__recommend, .header__business {
+        max-width: 45%;
+        margin: 10px;
+    }
+}
+
 
 
 .intro-page{
@@ -132,27 +159,13 @@ body{
     width: 100%;
 }
 
-@media screen and(max-width: 599px){
-    
-    .header__inner-container{
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    font-size: 18px;
+.header__card {
+    display: block;
+    padding: 32px;
+    max-width: 356px;
+    flex: 1;
+    margin: 4px;
 }
-.card__intro-recommended{
-    padding: 15px  20px;
-    padding-bottom:  5px;
-    align-items:center
-}
-.card__para{
-    padding: 12px 20px;
-}
-.card__para{
-    color: green;
-}
-}
-
 
 
 
@@ -168,6 +181,7 @@ body{
     max-width: 400px;
     position: relative;
     border-radius: 8px;
+    flex: 1;
 }
 
 
@@ -226,6 +240,7 @@ body{
     margin-right: 0px;
     padding: 32px;
     max-width: 400px;
+    flex: 1;
 }
 
 .business__title{
@@ -281,6 +296,10 @@ body{
         max-width: 100%;
         margin: 10px 0;
         padding: 20px;
+    }
+    .recommend__Pricing-button {
+        font-size: 18px;
+        padding: 10px 20px;
     }
     .header__info {
         width: 100%;
@@ -443,26 +462,24 @@ list-style-type: none;
     font-size: 24px;
 }
 
-@media (max-width: 768px) {
-    .footer-container {
-        padding: 60px 20px;
+@media (max-width: 480px) {
+    .intro-page__heading {
+        font-size: 28px;
     }
-    .footer__inner {
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
+    .recommend__plan-para {
+        font-size: 2rem;
     }
-    .footer__content {
-        width: 100%;
-        margin-bottom: 40px;
+    .recommend__Pricing-button {
+        font-size: 16px;
+        padding: 8px 16px;
     }
-    .footer__links {
-        width: 100%;
-        flex-direction: column;
-        padding: 0;
+    .header__info {
+        padding: 30px 10px;
+        font-size: 16px;
     }
-    .links__item {
-        margin: 20px 0;
+    .content__butn {
+        padding: 16px;
+        font-size: 14px;
     }
 }
 
